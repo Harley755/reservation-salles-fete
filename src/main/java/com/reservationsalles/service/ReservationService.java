@@ -16,9 +16,7 @@ import java.util.List;
 /**
  * Service métier pour la gestion des Réservations
  * Contient la logique critique de détection de conflits de réservation
- * 
- * @author Projet Master 1
- * @version 1.0
+ 
  */
 @Service
 @Transactional

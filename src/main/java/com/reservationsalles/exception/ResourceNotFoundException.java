@@ -3,9 +3,6 @@ package com.reservationsalles.exception;
 /**
  * Exception levée lorsqu'une ressource demandée n'est pas trouvée
  * Utilisée pour les cas 404 Not Found
- * 
- * @author Projet Master 1
- * @version 1.0
  */
 public class ResourceNotFoundException extends RuntimeException {
 

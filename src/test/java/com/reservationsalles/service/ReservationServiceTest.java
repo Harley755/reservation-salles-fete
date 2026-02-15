@@ -26,9 +26,7 @@ import static org.mockito.Mockito.*;
 /**
  * Tests unitaires pour ReservationService
  * Focus sur la détection de conflits de réservation
- * 
- * @author Projet Master 1
- * @version 1.0
+ 
  */
 @ExtendWith(MockitoExtension.class)
 class ReservationServiceTest {

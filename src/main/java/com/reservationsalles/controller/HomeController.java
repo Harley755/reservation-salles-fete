@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 /**
  * Controller pour la page d'accueil
  * 
- * @author Projet Master 1
- * @version 1.0
  */
 @Controller
 public class HomeController {

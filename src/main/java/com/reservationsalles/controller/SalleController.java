@@ -14,9 +14,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 /**
  * Controller MVC pour la gestion des Salles
  * Opérations CRUD complètes
- * 
- * @author Projet Master 1
- * @version 1.0
+ 
  */
 @Controller
 @RequestMapping("/salles")

@@ -13,9 +13,7 @@ import java.util.Objects;
 /**
  * Entité JPA représentant une Salle de fête
  * Relations: 1 Salle possède 0..* Reservations
- * 
- * @author Projet Master 1
- * @version 1.0
+ 
  */
 @Entity
 @Table(name = "salles")
@@ -53,9 +51,9 @@ public class Salle {
     @OneToMany(mappedBy = "salle", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Reservation> reservations = new ArrayList<>();
 
-    // ===============================
+    
     // CONSTRUCTEURS
-    // ===============================
+    
 
     public Salle() {
     }
@@ -67,9 +65,9 @@ public class Salle {
         this.disponible = disponible;
     }
 
-    // ===============================
+    
     // MÉTHODES UTILITAIRES
-    // ===============================
+    
 
     /**
      * Ajoute une réservation à la salle (gestion bidirectionnelle)
@@ -87,9 +85,9 @@ public class Salle {
         reservation.setSalle(null);
     }
 
-    // ===============================
+    
     // GETTERS ET SETTERS
-    // ===============================
+    
 
     public Long getId() {
         return id;
@@ -139,9 +137,9 @@ public class Salle {
         this.reservations = reservations;
     }
 
-    // ===============================
+    
     // EQUALS, HASHCODE, TOSTRING
-    // ===============================
+    
 
     @Override
     public boolean equals(Object o) {

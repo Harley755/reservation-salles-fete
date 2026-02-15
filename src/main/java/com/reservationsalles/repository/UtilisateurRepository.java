@@ -10,9 +10,7 @@ import java.util.Optional;
 /**
  * Repository pour l'entité Utilisateur
  * Hérite de JpaRepository qui fournit les méthodes CRUD de base
- * 
- * @author Projet Master 1
- * @version 1.0
+ 
  */
 @Repository
 public interface UtilisateurRepository extends JpaRepository<Utilisateur, Long> {

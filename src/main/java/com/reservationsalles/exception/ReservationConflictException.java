@@ -3,9 +3,6 @@ package com.reservationsalles.exception;
 /**
  * Exception levée lorsqu'une réservation entre en conflit avec une réservation existante
  * (même salle, même date, créneaux horaires qui se chevauchent)
- * 
- * @author Projet Master 1
- * @version 1.0
  */
 public class ReservationConflictException extends RuntimeException {
 

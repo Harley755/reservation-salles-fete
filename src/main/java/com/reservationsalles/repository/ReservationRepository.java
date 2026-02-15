@@ -15,9 +15,7 @@ import java.util.List;
 /**
  * Repository pour l'entité Reservation
  * Contient des requêtes critiques pour la détection de conflits de réservation
- * 
- * @author Projet Master 1
- * @version 1.0
+ 
  */
 @Repository
 public interface ReservationRepository extends JpaRepository<Reservation, Long> {

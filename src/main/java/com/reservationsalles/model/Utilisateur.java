@@ -12,9 +12,7 @@ import java.util.Objects;
 /**
  * Entité JPA représentant un Utilisateur du système
  * Relations: 1 Utilisateur possède 0..* Reservations
- * 
- * @author Projet Master 1
- * @version 1.0
+ 
  */
 @Entity
 @Table(name = "utilisateurs")
@@ -48,9 +46,9 @@ public class Utilisateur {
     @OneToMany(mappedBy = "utilisateur", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Reservation> reservations = new ArrayList<>();
 
-    // ===============================
+    
     // CONSTRUCTEURS
-    // ===============================
+    
 
     public Utilisateur() {
     }
@@ -61,9 +59,9 @@ public class Utilisateur {
         this.role = role;
     }
 
-    // ===============================
+    
     // MÉTHODES UTILITAIRES
-    // ===============================
+    
 
     /**
      * Ajoute une réservation à l'utilisateur (gestion bidirectionnelle)
@@ -81,9 +79,9 @@ public class Utilisateur {
         reservation.setUtilisateur(null);
     }
 
-    // ===============================
+    
     // GETTERS ET SETTERS
-    // ===============================
+    
 
     public Long getId() {
         return id;
@@ -125,9 +123,9 @@ public class Utilisateur {
         this.reservations = reservations;
     }
 
-    // ===============================
+    
     // EQUALS, HASHCODE, TOSTRING
-    // ===============================
+    
 
     @Override
     public boolean equals(Object o) {

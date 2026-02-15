@@ -12,9 +12,7 @@ import java.util.List;
 /**
  * Service métier pour la gestion des Utilisateurs
  * Contient la logique métier et les validations
- * 
- * @author Projet Master 1
- * @version 1.0
+ 
  */
 @Service
 @Transactional

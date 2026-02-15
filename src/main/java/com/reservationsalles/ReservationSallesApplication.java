@@ -6,9 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Classe principale de l'application Spring Boot
  * Plateforme de réservation de salles de fête
- * 
- * @author Projet Master 1
- * @version 1.0
+ 
  */
 @SpringBootApplication
 public class ReservationSallesApplication {

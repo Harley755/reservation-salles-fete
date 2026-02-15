@@ -12,9 +12,6 @@ import java.util.Objects;
  * Relations: 
  * - ManyToOne vers Utilisateur
  * - ManyToOne vers Salle
- * 
- * @author Projet Master 1
- * @version 1.0
  */
 @Entity
 @Table(name = "reservations")
@@ -56,9 +53,9 @@ public class Reservation {
     @NotNull(message = "La salle est obligatoire")
     private Salle salle;
 
-    // ===============================
+    
     // CONSTRUCTEURS
-    // ===============================
+    
 
     public Reservation() {
     }
@@ -72,9 +69,9 @@ public class Reservation {
         this.salle = salle;
     }
 
-    // ===============================
+    
     // MÉTHODES DE VALIDATION MÉTIER
-    // ===============================
+    
 
     /**
      * Vérifie si l'heure de fin est après l'heure de début
@@ -105,9 +102,9 @@ public class Reservation {
                this.heureFin.isAfter(autre.heureDebut);
     }
 
-    // ===============================
+    
     // GETTERS ET SETTERS
-    // ===============================
+    
 
     public Long getId() {
         return id;
@@ -157,9 +154,9 @@ public class Reservation {
         this.salle = salle;
     }
 
-    // ===============================
+    
     // EQUALS, HASHCODE, TOSTRING
-    // ===============================
+    
 
     @Override
     public boolean equals(Object o) {

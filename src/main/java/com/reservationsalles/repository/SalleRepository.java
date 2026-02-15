@@ -10,9 +10,7 @@ import java.util.List;
 /**
  * Repository pour l'entité Salle
  * Hérite de JpaRepository qui fournit les méthodes CRUD de base
- * 
- * @author Projet Master 1
- * @version 1.0
+ 
  */
 @Repository
 public interface SalleRepository extends JpaRepository<Salle, Long> {
